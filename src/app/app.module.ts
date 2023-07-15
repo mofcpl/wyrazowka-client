@@ -11,20 +11,20 @@ import { PanelComponent } from './panel/panel.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DescComponent,
-    CounterComponent,
-    LettersComponent,
-    ButtonComponent,
-    WordsComponent,
-    PanelComponent,
-    SpinnerComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      DescComponent,
+      CounterComponent,
+      LettersComponent,
+      ButtonComponent,
+      WordsComponent,
+      PanelComponent,
+      SpinnerComponent
+   ],
+   imports: [
+      BrowserModule
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }
