@@ -1,1 +1,9 @@
-<p>spinner works!</p>
+<div *ngIf="isLoading; else ready">
+   <div class="loading">
+      <div class="spinner"></div>
+   </div>;
+</div>
+
+<ng-template #ready>
+   <div></div>
+</ng-template>

@@ -1,0 +1,36 @@
+@import '../../css/variables';
+
+:host {
+   >.loading {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      z-index: 1;
+
+      >.spinner {
+         border: 100px solid rgba(255, 255, 255, 0.1);
+         border-top: 100px solid rgba(255, 255, 255, 0.3);
+         border-radius: 50%;
+         height: 40vw;
+         width: 40vw;
+         animation: rotation 2s ease infinite;
+      }
+   }
+}
+
+@keyframes rotation {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
