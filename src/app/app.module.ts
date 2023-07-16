@@ -9,6 +9,8 @@ import { ButtonComponent } from './button/button.component';
 import { WordsComponent } from './words/words.component';
 import { PanelComponent } from './panel/panel.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
    declarations: [
@@ -22,7 +24,9 @@ import { SpinnerComponent } from './spinner/spinner.component';
       SpinnerComponent
    ],
    imports: [
-      BrowserModule
+      BrowserModule,
+      FormsModule,
+      HttpClientModule
    ],
    providers: [],
    bootstrap: [AppComponent]
