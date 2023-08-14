@@ -1,6 +1,6 @@
 <div class="top">
    <app-panel></app-panel>
-   <div class="main">
+   <div class="main" *ngIf="isAppReady; else loading">
       <app-desc></app-desc>
       <app-counter></app-counter>
       <app-letters></app-letters>
@@ -9,3 +9,9 @@
    <app-spinner></app-spinner>
 </div>
 <app-words></app-words>
+
+<ng-template #loading>
+   <div class="loading">
+      <div>ładowanie</div>
+   </div>
+</ng-template>
