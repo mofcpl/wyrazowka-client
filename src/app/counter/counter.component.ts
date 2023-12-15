@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-counter',
@@ -7,11 +8,13 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
 
-   increse() {
+   constructor(private dataService: DataService) { }
 
+   increse() {
+      this.dataService.addLetter();
    }
    decrese() {
-
+      this.dataService.deleteLetter();
    }
 
 }

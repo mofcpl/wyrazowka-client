@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-spinner',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class SpinnerComponent {
 
-   isLoading: boolean = false;
+   isLoading: boolean = true;
+
+   constructor(private dataService: DataService) {}
+
+   ngOnInit() {
+      this.dataService.getLoaded().subscribe((isLoading)=> {
+         this.isLoading = isLoading;
+      })
+   }
 
 }
