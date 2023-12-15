@@ -1,0 +1,2 @@
+<input *ngFor="let letter of letters; let i = index; trackBy:trackById" [(ngModel)]="letters[i]" class="letter" maxlength="1" id="letter-input-{{i}}">
+
