@@ -1,27 +1,47 @@
-# Wyrazowka
+# Wyrazówka
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+The Wyrazowka is an internet application project designed to quickly search for words in a language dictionary based on specified letters and their positions in a word. Useful for crossword enthusiasts, creative writers, and anyone seeking words that fit a particular construction. 
 
-## Development server
+The project was created for the purpose of learning web technologies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Polish dictionary: [SJP](https://sjp.pl/)
 
-## Code scaffolding
+## Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Node.js is required for the development environment, with a minimum supported version of 18.10.0. This version is necessary due to Angular requirements.
 
-## Build
+Running [aircheck-server](https://github.com/mofcpl/wyrazowka-server) is required for this project to work.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+### Clone this repository
+```bash
+git clone https://github.com/mofcpl/aircheck-client.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Install dependencies
+```bash
+npm install
+```
 
-## Running end-to-end tests
+### Run development server
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies
 
-## Further help
+* Angular 16
+* RxJS 7
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributing
+
+1. Clone the repository and make a new branch from develop.
+2. Make changes.
+3. Open a Pull Request with a comprehensive description of changes.
+
+This project uses Git Flow branching model for development.
+
+## Notes
+
+Wyrazowka is a continuation of the earlier project, [Wyrazówka](https://github.com/mofcpl/wyrazowka), which was developed in a different technology stack.
