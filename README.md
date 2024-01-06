@@ -1,10 +1,22 @@
 # Wyrazówka
 
-The Wyrazowka is an internet application project designed to quickly search for words in a language dictionary based on specified letters and their positions in a word. Useful for crossword enthusiasts, creative writers, and anyone seeking words that fit a particular construction. 
+The Wyrazowka is an internet application project designed to quickly search for words in a language dictionary based on specified letters and their positions in a word. Useful for crossword enthusiasts, creative writers, and anyone seeking words that fit a particular construction.
+
+[Project site](https://wyrazowka.zbrogd.pl/)
 
 The project was created for the purpose of learning web technologies.
 
 Polish dictionary: [SJP](https://sjp.pl/)
+
+## Technologies
+
+* Angular 16
+* RxJS 7
+
+## To do
+
+- Support for various dictionaries
+- Different search methods(without considering the order of letters, with letter repetition)
 
 ## Requirements
 
@@ -28,11 +40,6 @@ npm install
 ```bash
 ng serve
 ```
-
-## Technologies
-
-* Angular 16
-* RxJS 7
 
 ## Contributing
 
