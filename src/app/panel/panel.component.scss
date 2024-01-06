@@ -26,8 +26,12 @@
 
       >.icon {
          display: none;
-         font-size: 20px;
-         margin: 0px 10px 0px 10px;
+         margin: 0px 20px 0px 20px;
+
+         img {
+            height: 35px;
+            width: auto;
+         }
       }
 
       @media (max-width: 500px) {

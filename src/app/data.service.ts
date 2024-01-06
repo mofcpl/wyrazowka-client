@@ -14,6 +14,7 @@ export class DataService {
 
    lettersChanged = new Subject<number>();
    findTriggered = new Subject<boolean>();
+   scrollDown = new Subject<boolean>();
 
    private dictionaryParams: DictionaryParams;
    private lettersCount: number;
@@ -80,6 +81,7 @@ export class DataService {
       this.fetchWords(letters).subscribe((data) => {
          this.matchingWords.next(data)
          this.loaded.next(false);
+         this.scrollDown.next(true);
       })
    }
 }

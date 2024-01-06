@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './css/variables';
+@import './css/mixins';
 
 @font-face {
    font-family: 'Source Sans Pro';
@@ -19,8 +20,6 @@ a:visited {
 }
 
 body {
-   width: 100vw;
-   height: 100vh;
    padding: 0;
    margin: 0;
    font-family: "Source Sans Pro", cursive;
@@ -57,21 +56,11 @@ button {
    }
 }
 
-@media (max-width: 768px) {
-   body::-webkit-scrollbar {
-      display: none;
-   }
-}
 
 ::-webkit-scrollbar {
    width: 50px;
    height: 60px;
    cursor: pointer;
-
-   @media (max-width: 768px) {
-      display: none;
-   }
-
 }
 
 ::-webkit-scrollbar-track {

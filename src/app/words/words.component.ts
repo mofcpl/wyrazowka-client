@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { DataService } from '../data.service';
    styleUrls: ['./words.component.scss']
 })
 export class WordsComponent {
+   @ViewChild('down') private down: ElementRef;
 
    words: string[];
 
@@ -15,6 +16,9 @@ export class WordsComponent {
    ngOnInit() {
       this.dataService.getMatchingWords().subscribe((words)=> {
          this.words = words;
+      })
+      this.dataService.scrollDown.subscribe( () => {
+         this.down.nativeElement.scrollIntoView({ behavior: 'smooth' });
       })
    }
 }
