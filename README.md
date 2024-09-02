@@ -22,7 +22,7 @@ Polish dictionary: [SJP](https://sjp.pl/)
 
 Node.js is required for the development environment, with a minimum supported version of 18.10.0. This version is necessary due to Angular requirements.
 
-Running [wyrazowka-server](https://github.com/mofcpl/wyrazowka-server) is required for this project to work.
+Running [wyrazowka-server](https://github.com/mofcpl/wyrazowka-server-node) is required for this project to work.
 
 ## Installation
 
